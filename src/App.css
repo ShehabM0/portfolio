@@ -165,6 +165,11 @@
   margin-right: 8px;
 }
 
+.terminal-output {
+  margin-left: 20px;
+  color: var(--text);
+}
+
 .terminal-cursor {
   display: inline-block;
   width: 10px;
@@ -172,6 +177,5 @@
   background-color: gainsboro;
   margin-left: 2px;
   vertical-align: text-bottom;
-  animation: blink 1s infinite;
 }
  
