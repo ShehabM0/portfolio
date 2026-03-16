@@ -1,0 +1,86 @@
+/* ── Section Title ──────────────────────────────────────── */
+.section-title {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin: 100px 0 30px;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 12px auto 0;
+  background: var(--text-h);
+  border-radius: 2px;
+}
+
+/* ── Terminal ──────────────────────────────────────── */
+.terminal {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  font-family: var(--mono);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: #f7f7f7;
+}
+
+.terminal-icon {
+  padding: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.terminal-title {
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.terminal-body {
+  text-align: left;
+  padding: 24px;
+  line-height: 1.7;
+}
+
+.prompt {
+  color: var(--text-h);
+  margin-right: 8px;
+}
+
+.terminal-output {
+  margin-left: 10px;
+  color: var(--text);
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.3em;
+  background-color: gainsboro;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+}
+ 
+.cursor-done {
+  animation: blink 1s infinite;
+}
+
+.green {
+  color: #16a34a;
+  font-weight: 500;
+}
