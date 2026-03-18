@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import "./Intro.css"
 
-import LinkedinLogo from "../assets/linkedin.svg"
-import GithubLogo from "../assets/github.svg"
-import MailLogo from "../assets/mail.svg"
+import LinkedinLogo from "../assets/social/linkedin.svg"
+import GithubLogo from "../assets/social/github.svg"
+import MailLogo from "../assets/social/mail.svg"
 
 const introText =
   "Backend engineer who enjoys building reliable systems and turning ideas into real products expressing them through mobile applications and web platforms";
