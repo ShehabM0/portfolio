@@ -1,3 +1,4 @@
+import ExperienceCard from "../components/ExperienceCard"
 import "./Experience.css";
 
 import FreelanceLogo from "../assets/companies/freelance.svg"
@@ -39,30 +40,7 @@ export default function Experience() {
 
       <div className="exp-list">
         {experiences.map((exp, i) => (
-          <div className="exp-card" key={i}>
-
-            <div className="exp-left">
-              <div>
-                <img className="icon" src={exp.logo} />
-                <br/>
-                <span className="exp-period">{exp.period}</span>
-              </div>
-              <span className="exp-index">0{i + 1}</span>
-            </div>
-
-            <div className="exp-divider" />
-
-            <div className="exp-right">
-              <p className="exp-title">{exp.title}</p>
-              <p className="exp-company">{exp.company}</p>
-              <ul className="exp-bullets">
-                {exp.bullets.map((b, j) => (
-                  <li key={j}>{b}</li>
-                ))}
-              </ul>
-            </div>
-
-          </div>
+          <ExperienceCard item={exp} idx={i} />
         ))}
       </div>
     </section>
