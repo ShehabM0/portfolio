@@ -11,17 +11,17 @@ const commands = [
     ],
   },
   {
-    cmd: "cat education.txt",
+    cmd: "bash education.sh",
     output: [
-      "✓ Bachelor of Computer Science Cairo University",
-      "✓ Graduation Project: Hospital Management System (Excellent with Honors)",
-      "✓ Graduated with Very Good with Honors",
+      <>✓ Bachelor of Computer Science <span className="blue">Cairo University</span></>,
+      <>✓ Graduation Project: Hospital Management System <span className="green">(Excellent with Honors)</span></>,
+      <>✓ Graduated with <span className="green">Very Good with Honors</span></>,
     ],
   },
   {
-    cmd: "bash military.sh",
+    cmd: "cat military.sh",
     output: [
-      <>Military status is <span className="green">completed</span></>
+      "Military status is completed"
     ],
   },
 ];

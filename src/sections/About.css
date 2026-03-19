@@ -81,6 +81,11 @@
 }
 
 .green {
-  color: #16a34a;
+  color: var(--clr-green);
+  font-weight: 500;
+}
+
+.blue {
+  color: blueviolet;
   font-weight: 500;
 }
