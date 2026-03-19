@@ -1,4 +1,4 @@
-import "../sections/Experience.css";
+import "./ExperienceCard.css";
 
 export default function ExperienceCard({ item, idx }) {
   return (
