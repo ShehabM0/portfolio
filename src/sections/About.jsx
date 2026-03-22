@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import "./About.css"
 
-import TerminalLogo from "../assets/terminal.svg"
+import TerminalLogo from "../assets/icons/terminal.svg"
 
 const commands = [
   {
@@ -66,43 +66,45 @@ export default function About({ phase }) {
   return (
     <>
     {/* About */}
-    <div className="section-title">
-      About me
-    </div>
-
-    {/* Terminal */}
-    <div className="terminal">
-      <div className="terminal-header">
-        <div>
-          <img className="terminal-icon" src={TerminalLogo} />
-        </div>
-        <div>
-          <span className="terminal-title">shehab@portfolio:~</span>
-        </div>
-        <div> </div>
+    <section className="about-section">
+      <div className="section-title">
+        About me
       </div>
 
-      <div className="terminal-body">
-        {history.map((item, i) => (
-          <div key={i}>
-            <p>
-              <span className="prompt">$</span> {item.cmd}
-            </p>
-
-            {item.output.map((line, j) => (
-              <p key={j} className="terminal-output">
-                {line}
-              </p>
-            ))}
+      {/* Terminal */}
+      <div className="terminal">
+        <div className="terminal-header">
+          <div>
+            <img className="terminal-icon" src={TerminalLogo} />
           </div>
-        ))}
+          <div>
+            <span className="terminal-title">shehab@portfolio:~</span>
+          </div>
+          <div> </div>
+        </div>
 
-        <p>
-          <span className="prompt">$</span> {currentCmd}
-          <span className={`terminal-cursor ${phase === "intro" || cmdIndex >= commands.length ? "cursor-done" : ""}`}/>
-        </p>
+        <div className="terminal-body">
+          {history.map((item, i) => (
+            <div key={i}>
+              <p>
+                <span className="prompt">$</span> {item.cmd}
+              </p>
+
+              {item.output.map((line, j) => (
+                <p key={j} className="terminal-output">
+                  {line}
+                </p>
+              ))}
+            </div>
+          ))}
+
+          <p>
+            <span className="prompt">$</span> {currentCmd}
+            <span className={`terminal-cursor ${phase === "intro" || cmdIndex >= commands.length ? "cursor-done" : ""}`}/>
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
     </>
   );
 }
