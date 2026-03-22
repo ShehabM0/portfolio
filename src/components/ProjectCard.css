@@ -1,0 +1,116 @@
+/* ── Card ────────────────────────────────────────────── */
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 28px;
+}
+
+.proj-card:first-child {
+  border-top: 1px solid var(--border);
+}
+
+/* ── Top ─────────────────────────────────────────────── */
+.proj-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.proj-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proj-year {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  opacity: 0.35;
+}
+
+.proj-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  opacity: 0.15;
+}
+
+.proj-title {
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+.proj-desc {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text);
+  opacity: 0.8;
+  max-width: 640px;
+}
+
+/* ── Bottom ──────────────────────────────────────────── */
+.proj-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+/* ── Tech icons ──────────────────────────────────────── */
+.proj-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tech-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--text);
+  opacity: 0.3;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+}
+
+.tech-icon:hover {
+  opacity: 0.8;
+}
+
+/* ── GitHub link ─────────────────────────────────────── */
+.proj-link {
+  display: inline-flex;
+  background-color: black;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-weight: 100;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+}
+
+.proj-link:hover {
+  background-color: black;
+}
+
+.proj-link img {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
