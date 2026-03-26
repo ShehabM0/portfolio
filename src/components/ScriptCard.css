@@ -12,8 +12,8 @@
   position: relative;
 }
 
-.script-card:nth-child(odd) {
-  border-right: 1px solid var(--border);
+.script-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 .script-card:nth-last-child(-n+2) {

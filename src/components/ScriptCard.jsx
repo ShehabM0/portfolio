@@ -1,6 +1,15 @@
 import "./ScriptCard.css";
 
 import GithubLogo from "../assets/social/github.svg"
+import LinuxLogo from "../assets/tech/linux.svg"
+import BashLogo from "../assets/tech/bash.svg"
+import VimLogo from "../assets/tech/vim.svg"
+
+const icons = {
+  linux: { title: "Linux", icon: LinuxLogo },
+  bash: { title: "Bash", icon: BashLogo },
+  vim: { title: "Vim", icon: VimLogo },
+}
 
 export default function ScriptCard({ item, idx }) {
   const ArrowIcon = () => (
@@ -19,7 +28,7 @@ export default function ScriptCard({ item, idx }) {
     >
       <div className="script-card-top">
         <div className="script-lang-cont">
-          <img className="script-lang-icon" src={item.logo} />
+          <img className="script-lang-icon" src={icons[item.logo].icon} />
           <span className="script-lang">{item.lang}</span>
         </div>
         <span className="script-arrow"><ArrowIcon /></span>
