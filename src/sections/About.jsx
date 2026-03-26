@@ -19,7 +19,7 @@ const commands = [
     ],
   },
   {
-    cmd: "cat military.sh",
+    cmd: "cat military.txt",
     output: [
       "Military status is completed"
     ],
