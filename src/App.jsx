@@ -1,6 +1,7 @@
 import Experience from "./sections/Experience"
 import Projects from "./sections/Projects"
 import Scripts from "./sections/Scripts"
+import Courses from "./sections/Courses"
 import About from "./sections/About"
 import Intro from "./sections/Intro"
 import { useState } from "react"
@@ -22,6 +23,7 @@ export default function App() {
       <Experience />
       <Projects />
       <Scripts />
+      <Courses />
     </main>
   );
 }

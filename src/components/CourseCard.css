@@ -20,7 +20,6 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: #111;
   flex-shrink: 0;
 }
 
@@ -45,10 +44,8 @@
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.72);
-  border: 0.5px solid rgba(255, 255, 255, 0.18);
+  color: var(--text-h);
+  border: 0.5px solid #cbd5e1;
   padding: 3px 8px;
   border-radius: 3px;
   backdrop-filter: blur(4px);
