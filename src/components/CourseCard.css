@@ -15,26 +15,26 @@
 }
 
 /* ── Thumbnail ───────────────────────────────────────── */
-.course-thumb-wrap {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
 .course-thumb {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  aspect-ratio: 16 / 9;
+  background: var(--code-bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   filter: grayscale(100%);
   transition: filter 0.3s, transform 0.3s;
 }
 
-.course-card:hover .course-thumb {
-  filter: grayscale(60%);
-  transform: scale(1.03);
+.course-thumb-label {
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
 }
 
 .course-platform-badge {

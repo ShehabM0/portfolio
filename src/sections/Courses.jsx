@@ -7,7 +7,7 @@ const courses = [
     description: "Demonstrating strong problem-solving skills, data structures, algorithms, and competitive programming proficiency.",
     platform: "ECPC",
     cert: "https://drive.google.com/file/d/1mx8XhI0P3lOs6Ox5R_iqzySjC40Db4Om/view?usp=sharing",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=ECPC",
+    thumb: "ECPC",
   },
 
   {
@@ -15,7 +15,7 @@ const courses = [
     description: "Demonstrating strong problem-solving skills, data structures, algorithms, and competitive programming proficiency.",
     platform: "ECPC",
     cert: "https://drive.google.com/file/d/1UsbQgvxfz6kEeafJWX5k-fip9RDoTc0a/view?usp=sharing",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=ECPC",
+    thumb: "ECPC",
   },
 
   {
@@ -24,7 +24,7 @@ const courses = [
     platform: "UCSandDiego",
     instructor: "University of California San Diego",
     cert: "https://drive.google.com/file/d/1l1DrAlJvCmFL-GCXptN3vRoeFAnflx0h/view?usp=sharing",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=Data Structures",
+    thumb: "Data Structures",
   },
 
   {
@@ -33,7 +33,7 @@ const courses = [
     platform: "UCSandDiego",
     instructor: "University of California San Diego",
     cert: "https://drive.google.com/file/d/1B--01h72MRCqI3Pl-_Ae-PeZunLDPoI_/view?usp=sharing",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=Algorithms",
+    thumb: "Algorithms",
   },
 
   {
@@ -42,7 +42,7 @@ const courses = [
     platform: "CSkilled Academy",
     instructor: "Dr. Moustafa Saad",
     cert: "https://drive.google.com/file/d/1B--01h72MRCqI3Pl-_Ae-PeZunLDPoI_/view?usp=sharing",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=Algorithms I",
+    thumb: "Algorithms I",
   },
 
   {
@@ -51,7 +51,7 @@ const courses = [
     platform: "CSkilled Academy",
     instructor: "Dr. Moustafa Saad",
     cert: "https://drive.google.com/file/d/1AhnMTy-LUz4RMT0Pvn-JIplMettjNaiL/view?usp=sharing",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=Algorithms II",
+    thumb: "Algorithms II",
   },
 
   {
@@ -60,7 +60,7 @@ const courses = [
     platform: "180-Degree",
     instructor: "Eng. Ziad Khaled",
     cert: "https://drive.google.com/file/d/16scUqQFBisGtwgFxPBYPvXMdG8FB3F69/view?usp=sharing",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=Back End",
+    thumb: "Back End Development",
   },
 
   {
@@ -69,7 +69,7 @@ const courses = [
     platform: "Udemy",
     instructor: "Amigoscode",
     cert: "https://drive.google.com/file/d/1u3nWX6aZuhFmkZUG5WqEAYqkKbCSazrX/view?usp=drive_link",
-    thumb: "https://placehold.co/480x270/FAF9F6/111111?text=Git",
+    thumb: "Git",
   },
 ];
 

@@ -6,13 +6,8 @@ export default function CourseCard({ item, idx }) {
   return (
     <div className="course-card" key={idx}>
 
-      <div className="course-thumb-wrap">
-        <img
-          className="course-thumb"
-          src={item.thumb}
-          alt={item.title}
-          loading="lazy"
-        />
+      <div className="course-thumb">
+        <span className="course-thumb-label">{item.thumb}</span>
         <span className="course-platform-badge">{item.platform}</span>
       </div>
 
