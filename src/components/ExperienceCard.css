@@ -40,6 +40,11 @@
   align-self: flex-end;
 }
 
+.exp-icon {
+  width: 18px;
+  height: 18px;
+}
+
 /* ── Vertical divider ────────────────────────────────── */
 .exp-divider {
   width: 1px;

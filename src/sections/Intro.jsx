@@ -8,6 +8,23 @@ import MailLogo from "../assets/social/mail.svg"
 const introText =
   "Backend engineer who enjoys building reliable systems and turning ideas into real products expressing them through mobile applications and web platforms";
 
+const links = [
+  {
+    href: "mailto:shehabmohamed2357@gmail.com",
+    icon: MailLogo
+  },
+
+  {
+    href: "https://github.com/ShehabM0",
+    icon: GithubLogo
+  },
+
+  {
+    href: "https://www.linkedin.com/in/shehab-mohamed-4284b8249/",
+    icon: LinkedinLogo
+  },
+];
+
 export default function Intro({ phase, setPhase }) {
   const [displayIntroText, setDisplayIntroText] = useState("");
   const [introTextDone, setIntroTextDone] = useState(false);
@@ -40,15 +57,11 @@ export default function Intro({ phase, setPhase }) {
 
     {/* Icons */}
     <div className="icons">
-      <a className="link" href="mailto:shehabmohamed2357@gmail.com" target="_blank" >
-        <img className="icon" src={MailLogo} />
-      </a>
-      <a className="link" href="https://github.com/ShehabM0" target="_blank" >
-        <img className="icon" src={GithubLogo} />
-      </a>
-      <a className="link" href="https://www.linkedin.com/in/shehab-mohamed-4284b8249/" target="_blank" >
-        <img className="icon" src={LinkedinLogo} />
-      </a>
+      {links.map((l) => (
+        <a className="link" href={l.href} target="_blank" >
+          <img src={l.icon} />
+        </a>
+      ))}
     </div>
     </>
   );

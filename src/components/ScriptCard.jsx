@@ -40,7 +40,7 @@ export default function ScriptCard({ item, idx }) {
       </div>
 
       <div className="script-card-footer">
-        <img className="icon" src={GithubLogo} />
+        <img src={GithubLogo} />
         <span>View on GitHub</span>
       </div>
     </a>

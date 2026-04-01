@@ -123,8 +123,6 @@
 .script-card-footer img {
   width: 16px;
   height: 16px;
-  fill: currentColor;
-  flex-shrink: 0;
 }
 
 .script-card-footer span {

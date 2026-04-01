@@ -6,7 +6,7 @@ export default function ExperienceCard({ item, idx }) {
 
       <div className="exp-left">
         <div>
-          <img className="icon" src={item.logo} />
+          <img className="exp-icon" src={item.logo} />
           <br/>
           <span className="exp-period">{item.period}</span>
         </div>
