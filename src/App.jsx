@@ -2,6 +2,7 @@ import Experience from "./sections/Experience"
 import Projects from "./sections/Projects"
 import Scripts from "./sections/Scripts"
 import Courses from "./sections/Courses"
+import Header from "./sections/Header"
 import About from "./sections/About"
 import Intro from "./sections/Intro"
 import { useState } from "react"
@@ -12,12 +13,7 @@ export default function App() {
 
   return (
     <main className="main">
-      {/* Badge */}
-      <div className="badge">
-        <span className="badge-dot" />
-        available for work
-      </div>
-
+      <Header />
       <Intro phase={phase} setPhase={setPhase}/>
       <About phase={phase}/>
       <Experience />
